@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand ms-2" href="https://planytics.com/">
+    <img src="https://planytics.ai/images/planytics.svg">
+    <span>{{title}}</span>
+  </a> 
+  <div class="home">
+    <a class="home" routerLinkActive="active" [routerLink]="['/home']"><i class="fa fa-home"></i>          Home</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="panel-wm">
+        <section class="panel-wm-content">
+      <div id="demo-container">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+  </div>
+</div>

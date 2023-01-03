@@ -1,0 +1,33 @@
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto"> 
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <img src="https://planytics.ai/images/planytics.svg">
+            <br>
+            <hr>
+            <form (submit)="onSignIn(signInForm)" #signInForm="ngForm">
+
+              <div class="form-floating mb-3">
+                <input name="username" ngModel type="text" #usernameInput="ngModel" [(ngModel)]="username" class="form-control" id="floatingInput" placeholder="Enter Username" required>
+                <label for="floatingInput">User Name</label>
+              </div> 
+
+              <div class="form-floating mb-3">
+                <input [(ngModel)]="password" ngModel type="password" minlength="8" #passwordInput="ngModel" required name="password" class="form-control" id="floatingPassword" placeholder="Enter Password" >
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign in</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
